@@ -45,7 +45,6 @@ jobs:
           cmake -B build ${{matrix.cmake-flags}}
       - name: "Compile"
         run: |
-          pwd
           cmake --build build -j$(nproc)
       - name: "Run tests"
         run: |

@@ -2,7 +2,7 @@
 #include <MergeSort.hpp>
 #include <random>
 
-TEST(Sorts, QuickSort) {
+TEST(Sorts, MergeSort) {
   std::vector<int> v = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
   std::random_device rd;
   std::mt19937 g(rd());
